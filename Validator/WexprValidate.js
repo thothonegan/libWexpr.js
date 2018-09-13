@@ -8,7 +8,7 @@
 // Returns 0 on success, or 1 if invalid wexpr
 //
 
-require('./libWexpr.js');
+require('../libWexpr.js');
 var fs = require('fs')
 
 // For now, the only argument we take is the input file
