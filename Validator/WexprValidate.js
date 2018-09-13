@@ -1,8 +1,7 @@
 #!/usr/bin/env node
 //
 // WexprValidate.js
-// Simple program designed
-// Runner to be compatible with libWexpr's test runner
+// Simple program designed to be compatible with libWexpr's test runner
 //
 // Usage: [node] ./WexprValidate.js [wexprfilename]
 // Returns 0 on success, or 1 if invalid wexpr
@@ -14,8 +13,6 @@ var fs = require('fs')
 // For now, the only argument we take is the input file
 // argument one is our program
 inputFilePath = process.argv[2];
-
-errorCode = 0; // success
 
 fs.readFile (inputFilePath, 'utf8', function(err, data) {
 	if (err) {
